@@ -32,8 +32,9 @@ const HomePage = () => {
   };
 
   console.log("data", data);
+
   return (
-    <div className="flex justify-center pt-10 mx-auto h-screen w-screen">
+    <div className="flex justify-center pt-10 mx-auto h-screen">
       {isError && (
         <p className="text-center text-red-600">Something went wrong...</p>
       )}
@@ -41,7 +42,7 @@ const HomePage = () => {
       <div className="relative w-[560px]">
         <input
           type="text"
-          className="border py-2 px-4 w-full h-[42px] mb-2"
+          className="border-solid border-2 rounded-lg border-teal-800 py-2 px-4 w-full h-[42px] mb-2 focus:outline-none"
           placeholder="Search for Github username..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -53,7 +54,7 @@ const HomePage = () => {
               <li
                 key={user.id}
                 onClick={() => clickHandler(user.login)}
-                className="py-2 px-4 hover:bg-gray-500 hover:text-white transition-colors cursor-pointer"
+                className="py-2 px-4 hover:bg-teal-400 hover:text-white transition-colors cursor-pointer"
               >
                 {user.login}
               </li>

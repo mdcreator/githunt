@@ -1,13 +1,12 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <nav className="flex justify-between items-center h-[50px] px-5 shadow-md bg-gray-500 text-white">
+    <nav className="flex justify-between border-b-2 border-teal-800 items-center h-[50px] px-20 m-20 text-white">
       <h3 className="font-bold">Github Search</h3>
 
-      <span>
-        <Link to="/" className="mr-2">
+      <span className="uppercase text-sm">
+        <Link to="/" className="mr-5">
           Home
         </Link>
         <Link to="/favourite">Favourite</Link>
