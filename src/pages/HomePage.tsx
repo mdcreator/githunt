@@ -63,7 +63,7 @@ const HomePage = () => {
         )}
         <div>
           {areReposLoading && (
-            <p className="text-center">Reposs are loading...</p>
+            <p className="text-center text-white">Reposs are loading...</p>
           )}
           {repos?.map((repo) => (
             <p>
